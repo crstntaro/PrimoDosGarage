@@ -372,10 +372,11 @@
       </div>
     </div>
   </div>
+  <!-- backdrop lives inside .pos-app so it shares its stacking context and sits below the order sheet -->
+  <div class="order-backdrop" id="orderBackdrop" onclick="closeSheet()"></div>
 </div>
 
 <!-- MOBILE ORDER FAB -->
-<div class="order-backdrop" id="orderBackdrop" onclick="closeSheet()"></div>
 <button class="order-fab" id="orderFab" onclick="openSheet()">
   <span class="cnt" id="fabCnt">0</span><span class="lbl">View Order</span><span class="amt" id="fabAmt">₱0</span>
 </button>
